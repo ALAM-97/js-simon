@@ -19,15 +19,15 @@ alert(randomNum);
 
 // 2.
 
-setTimeout(wait, 30000);
+setTimeout(wait, 3000);
     function wait() {
         for ( i = 0; i < 5; i++) {
             var userInput = parseInt(prompt("Inserisci un numero"));
-            if (randomNum.includes(userInput)) {
+            if (randomNum.includes(userInput) && !userNum.includes(userInput)) {
                 userNum.push(userInput);
             }
         }
-        alert("Hai indovinato " + userNum.length + " numeri: " + userNum);
+        alert("Hai indovinato " + userNum.length + " numero/i : " + userNum);
     };
 
 
